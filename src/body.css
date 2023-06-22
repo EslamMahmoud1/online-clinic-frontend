@@ -1,0 +1,48 @@
+.search {
+  grid-area: s;
+}
+#searchbar {
+  width: 100%;
+}
+.age {
+  border-style: solid;
+  grid-area: a;
+  margin: 10px;
+  padding: 20px;
+}
+.gender {
+  border-style: solid;
+  grid-area: g;
+  margin: 10px;
+  padding: 20px;
+}
+.dropdown {
+  grid-area: d;
+}
+.diagnosis_box {
+  border-style: solid;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-template-areas:
+    "s s"
+    "d d"
+    "a g";
+  margin: 10px;
+  padding: 20px;
+  width: 50%;
+  margin-left: 500px;
+}
+.search,
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  max-height: 200px;
+  overflow-y: auto;
+  cursor: pointer;
+}
+
+.dropdown :hover {
+  background-color: green;
+}

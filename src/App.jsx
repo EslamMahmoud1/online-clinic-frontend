@@ -10,12 +10,14 @@ import SignUp from "./SignUp";
 import SignIn from "./SignIn";
 import ForDoctors from "./ForDoctors";
 import Sidebar from "./Sidebar";
+import Diagnosis from "./Diagnosis";
 
 function App() {
   return (
     <div className="App">
       <NavHeader />
       <Route exact path="/" component={Home} />
+      <Route exact path="/Diagnosis" component={Diagnosis} />
       <Route exact path="/Contact" component={Contact} />
       <Route exact path="/About" component={About} />
       <Route exact path="/Doctors" component={Doctors} />

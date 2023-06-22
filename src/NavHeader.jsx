@@ -16,6 +16,9 @@ function NavHeader() {
       <li>
         <Link to="/Contact">Contact Us</Link>
       </li>
+      <li>
+        <Link to="/Diagnosis">Diagnosis</Link>
+      </li>
       <li id="rightSide">
         <Link to="/ForDoctors">For Doctors</Link>
       </li>

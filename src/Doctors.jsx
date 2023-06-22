@@ -83,11 +83,11 @@ const Doctors = () => {
       </h2>
       <div id="searchResults">
         {searchResults.map((doctor) => (
-          <div id="doctorCard">
-            <img src={doctor.image} id="doctorAvatar"></img>
+          <div id="doctorCard" key={doctor.id}>
+            <img src={doctor.image} id="doctorAvatar" alt="doctor.img"></img>
             <h3>
               <strong>
-              {doctor.firstName} {doctor.lastName}
+                {doctor.firstName} {doctor.lastName}
               </strong>
             </h3>
             <h4> {doctor.company.department} </h4>
